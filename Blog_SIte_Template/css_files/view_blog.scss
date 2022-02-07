@@ -1,0 +1,216 @@
+// initial css for making margin and padding 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:unset;
+
+}
+.read-more{
+    color:rgb(62, 162, 255) !important;
+}
+button{
+    cursor: pointer;
+    background:rgb(62, 162, 255) !important;
+    color:white;
+}
+// css for navigation bar
+header{
+    
+    nav{
+        padding:.5em;
+        
+        width:1300px;
+        margin:auto;
+        align-items: center;
+        display:flex;
+        justify-content: space-between;
+        
+        .nav-left{
+            .logo{
+                p{
+                    font-size:30px;
+                }
+            }
+        }
+        .nav-middle{
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    margin-right:1.5em;
+                    a{
+                        text-decoration: none;
+                        color:#434040;
+                    }
+                }
+                .active{
+                    color:#33C257;
+                    padding-bottom: .2em;
+                    border-bottom:2px solid rgb(62, 162, 255); 
+                }
+                li:hover{
+                    
+                    color:#33C257;
+                    padding-bottom: .2em;
+                    border-bottom:2px solid rgb(62, 162, 255);
+                }
+
+            }
+
+        }
+        .nav-right{
+            .subscribe-btn{
+                border:none;
+                padding:1em 3em;
+                border-radius: 2px;
+                background:linear-gradient( to right,#1DE54F, #3be665);
+                color:white;
+            }
+        }
+    }
+}
+
+// css for view blog hero section
+
+.view-blog-hero{
+    background-image: url('/images/photo.png');
+    height:500px;
+    width:1420px;
+    margin:auto;
+    .blog-title{
+        width:80%;
+        margin:auto;
+        text-align: center;
+        padding-top:22%;
+        p{
+            font-size:55px;
+            font-weight: bold;
+            margin-bottom: 1em;
+            color:rgb(54, 54, 54);
+        }
+    }
+}
+
+// css for container
+
+.container{
+    
+    width:1250px;
+    margin:auto;
+    margin-top:5em;
+    .contents{
+        width:1300px;
+        margin:auto;
+
+        .texts{
+            letter-spacing: 1px;
+            line-height: 1.8em;
+            margin:3em 0;
+        }
+        .img{
+            width:100%;
+            img{
+                width:100%;
+            }
+        }
+    }
+}
+
+
+// css for footer subscribe section
+
+footer{
+    width:1420px;
+    
+    margin:auto;
+    margin-top:7em;
+    .footer-subscribe-section{
+        width:100%;
+        height:300px;
+        background:linear-gradient(to right, #383941,#222F21);
+
+        .subscribe-context{
+            width:fit-content;
+            margin:auto;
+            padding-top:6em;
+            .join-txt{
+                font-size:20px;
+                color:white;
+                text-align: center;
+                margin-bottom: 2em;
+            }
+            .sub-btn{
+                display:flex;
+                input{
+                    outline:none;
+                    border-radius: 4px;
+                    display: block;
+                    color:rgb(161, 161, 161);
+                    width:250px;
+                    height:40px;
+                    padding:.3em;
+                    padding-left:1em;
+                    border:none;
+                    -webkit-box-shadow: 0px 2px 15px -4px rgba(0,0,0,0.89); 
+                    box-shadow: 0px 2px 15px -4px rgba(0,0,0,0.89);
+                }
+                button{
+                    margin-left:.5em;
+                    height:40px;
+                    border:none;
+                    padding:1em 3em;
+                    border-radius: 2px;
+                    background:linear-gradient( to right,#1DE54F, #3be665);
+                    color:white;
+                }
+            }
+        }
+    }
+}
+
+// css for footer contents section
+
+footer{
+    .footer-contents{
+        width:100%;
+        margin:auto;
+        margin-top:5em;
+        margin-bottom: 3em;
+
+        display: flex;
+        justify-content: space-evenly;
+        
+        .f-t-title{
+            font-weight: bold;
+            font-size:20px;
+            
+        }
+        p{
+            margin-bottom: 1em;
+            font-weight: bold;
+        }
+        .f-t-s-context{
+            width:150px;
+            font-weight: normal;
+        }
+
+        .f-t-right{
+            button{
+                border:.3px solid rgb(182, 182, 182);
+                padding:1em 3em;
+                border-radius: 4px;
+                display: block;
+                width:200px;
+                margin-top: 1.5em;
+            }
+        }
+
+       
+        
+    }
+}

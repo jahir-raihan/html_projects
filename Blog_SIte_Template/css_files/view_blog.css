@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.read-more {
+  color: #3ea2ff !important;
+}
+
+button {
+  cursor: pointer;
+  background: #3ea2ff !important;
+  color: white;
+}
+
+header nav {
+  padding: .5em;
+  width: 1300px;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .nav-left .logo p {
+  font-size: 30px;
+}
+
+header nav .nav-middle ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .nav-middle ul li {
+  margin-right: 1.5em;
+}
+
+header nav .nav-middle ul li a {
+  text-decoration: none;
+  color: #434040;
+}
+
+header nav .nav-middle ul .active {
+  color: #33C257;
+  padding-bottom: .2em;
+  border-bottom: 2px solid #3ea2ff;
+}
+
+header nav .nav-middle ul li:hover {
+  color: #33C257;
+  padding-bottom: .2em;
+  border-bottom: 2px solid #3ea2ff;
+}
+
+header nav .nav-right .subscribe-btn {
+  border: none;
+  padding: 1em 3em;
+  border-radius: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(#1DE54F), to(#3be665));
+  background: linear-gradient(to right, #1DE54F, #3be665);
+  color: white;
+}
+
+.view-blog-hero {
+  background-image: url("/images/photo.png");
+  height: 500px;
+  width: 1420px;
+  margin: auto;
+}
+
+.view-blog-hero .blog-title {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 22%;
+}
+
+.view-blog-hero .blog-title p {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #363636;
+}
+
+.container {
+  width: 1250px;
+  margin: auto;
+  margin-top: 5em;
+}
+
+.container .contents {
+  width: 1300px;
+  margin: auto;
+}
+
+.container .contents .texts {
+  letter-spacing: 1px;
+  line-height: 1.8em;
+  margin: 3em 0;
+}
+
+.container .contents .img {
+  width: 100%;
+}
+
+.container .contents .img img {
+  width: 100%;
+}
+
+footer {
+  width: 1420px;
+  margin: auto;
+  margin-top: 7em;
+}
+
+footer .footer-subscribe-section {
+  width: 100%;
+  height: 300px;
+  background: -webkit-gradient(linear, left top, right top, from(#383941), to(#222F21));
+  background: linear-gradient(to right, #383941, #222F21);
+}
+
+footer .footer-subscribe-section .subscribe-context {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding-top: 6em;
+}
+
+footer .footer-subscribe-section .subscribe-context .join-txt {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+footer .footer-subscribe-section .subscribe-context .sub-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-subscribe-section .subscribe-context .sub-btn input {
+  outline: none;
+  border-radius: 4px;
+  display: block;
+  color: #a1a1a1;
+  width: 250px;
+  height: 40px;
+  padding: .3em;
+  padding-left: 1em;
+  border: none;
+  -webkit-box-shadow: 0px 2px 15px -4px rgba(0, 0, 0, 0.89);
+  box-shadow: 0px 2px 15px -4px rgba(0, 0, 0, 0.89);
+}
+
+footer .footer-subscribe-section .subscribe-context .sub-btn button {
+  margin-left: .5em;
+  height: 40px;
+  border: none;
+  padding: 1em 3em;
+  border-radius: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(#1DE54F), to(#3be665));
+  background: linear-gradient(to right, #1DE54F, #3be665);
+  color: white;
+}
+
+footer .footer-contents {
+  width: 100%;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer-contents .f-t-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer .footer-contents p {
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+footer .footer-contents .f-t-s-context {
+  width: 150px;
+  font-weight: normal;
+}
+
+footer .footer-contents .f-t-right button {
+  border: 0.3px solid #b6b6b6;
+  padding: 1em 3em;
+  border-radius: 4px;
+  display: block;
+  width: 200px;
+  margin-top: 1.5em;
+}
+/*# sourceMappingURL=view_blog.css.map */
