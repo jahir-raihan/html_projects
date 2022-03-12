@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css_files/home.css">
+    <script src="/js_files/home.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="nav-one">
+            <nav>
+                <div class="left">
+                    <div class="logo">
+                        <img src="/image_files/logo.png" alt="">
+                        <p>Bangal shop</p>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="input">
+                        <div class="search-icon">
+                            <img src="/image_files/search.svg" alt="">
+                        </div>
+                        <div class="search-input">
+                            <input type="text" placeholder="Search here . . .">
+                        </div>
+                        <div class="search-button">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="liked">
+                        <img src="/image_files/love.svg" alt="">
+                    </div>
+                    <div class="cart">
+                        <div class="cart-container">
+                            <div class="cart-icon">
+                                <img src="/image_files/cart.svg" alt="">
+                            </div>
+                            <div class="cart-count">
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-account">
+                        <div class="u-c-icon">
+                            <img src="/image_files/user.png" alt="">
+                        </div>
+                        
+                    </div>
+                
+
+                    <div class="hams" >
+                        <div class="ham-container" onclick="t_on()">
+                            <div class="ham"></div>
+                        <div class="ham"></div>
+                        <div class="ham"></div>
+                        </div>
+                        
+
+                        <div class="toggle-menu d-none" id="toggle-menu">
+                            <div class="toggle-menu-container">
+                                <div class="t-n-input">
+                                    <div class="search-icon">
+                                        <img src="/image_files/search.svg" alt="">
+                                    </div>
+                                    <div class="search-input">
+                                        <input type="text" placeholder="Search here . . .">
+                                    </div>
+                                    <div class="search-button">
+                                        <button>Search</button>
+                                    </div>
+                                </div>
+                                <div class="t-n-user-account">
+                                   
+                                </div>
+                                <div class="t-n-links">
+                                    <ul>
+                                        <li>
+                                            <div class="nav-link">
+                                                <p>Home</p>
+                                                <div class="down-icon">
+                                                    <img src="/image_files/down.png" alt="">
+                                                </div>
+                                                
+                                            
+                                            </div>
+                                            <div class="active"></div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link">
+                                                <p>Shop</p>
+                                                <div class="down-icon">
+                                                    <img src="/image_files/down.png" alt="">
+                                            </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link">
+                                                <p>Pages</p>
+                                                <div class="down-icon">
+                                                    <img src="/image_files/down.png" alt="">
+                                            </div>
+                                            
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link">
+                                                <p>Blog</p>
+                                                <div class="down-icon">
+                                                    <img src="/image_files/down.png" alt="">
+                                            </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Track Oreder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="nav-two">
+            <nav>
+                <div class="left">
+                    <div class="category-dropdown">
+                        <div class="cat-ham">
+                            <img src="/image_files/menu-right.png" alt="">
+                        </div>
+                        <p>All Categories</p>
+                        <div class="cat-dp-icon">
+                            <img src="/image_files/chevron-down.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="middle">
+                    <ul>
+                        <li id="n-l-h" onclick="n_l_h_on()">
+                            <div class="nav-link">
+                                <p>Home</p>
+                                <div class="down-icon">
+                                     <img src="/image_files/down.png" alt="">
+                                </div>
+
+                                <div class="home-d-d-links d-none" id="home-d-d-links">
+                                    <a href="#">Demo Link</a>
+                                    <a href="#">Demo Link1</a>
+                                    <a href="#">Demo Link2</a>
+                                </div>
+                                
+                             
+                            </div>
+                            <div class="active"></div>
+                        </li>
+                        <li onclick="n_l_s_on()">
+                            <div class="nav-link">
+                                <p>Shop</p>
+                                <div class="down-icon">
+                                    <img src="/image_files/down.png" alt="">
+                               </div>
+                               <div class="home-d-d-links d-none" id="shop-d-d-links">
+                                <a href="#">Demo Link</a>
+                                <a href="#">Demo Link1</a>
+                                <a href="#">Demo Link2</a>
+                            </div>
+                            </div>
+                        </li>
+                        <li onclick="n_l_p_on()">
+                            <div class="nav-link">
+                                <p>Pages</p>
+                                <div class="down-icon">
+                                    <img src="/image_files/down.png" alt="">
+                               </div>
+                               <div class="home-d-d-links d-none" id="page-d-d-links">
+                                <a href="#">Demo Link</a>
+                                <a href="#">Demo Link1</a>
+                                <a href="#">Demo Link2</a>
+                            </div>
+                               
+                            </div>
+                        </li>
+                        <li onclick="n_l_b_on()">
+                            <div class="nav-link">
+                                <p>Blog</p>
+                                <div class="down-icon">
+                                    <img src="/image_files/down.png" alt="">
+                               </div>
+                               <div class="home-d-d-links d-none" id="blog-d-d-links">
+                                <a href="#">Demo Link</a>
+                                <a href="#">Demo Link1</a>
+                                <a href="#">Demo Link2</a>
+                            </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Track Oreder</a></li>
+                    </ul>
+                </div>
+                <div class="right ">
+                    <a class="spc-offer" href="#">% Special Offers!</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <div class="hero">  
+        <div class="hero-container">
+            <div class="left">
+                <div class="offer-txt">
+                    <p>Save upto 30%</p>
+                </div>
+
+                <div class="hero-heading">
+                    <h1>Bangal Vegetable Farm <span>Organic 100%</span></h1>
+                </div>
+                <div class="hero-context">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula faucibus massa est elit maecenas.</p>
+                </div>
+
+                <div class="shop-now-btn">
+                    <button>Shop Now</button>
+                </div>
+
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="silder-indicator">
+            <div class="one"></div>
+            <div class="one active"></div>
+            <div class="one"></div>
+        </div>
+    
+    
+    </div>
+
+    <div class="container">
+      
+        <div class="contents">
+            <div class="product-categories">
+
+                <div class="left-arrow">
+                    <a>&#10094;</a>
+                </div>
+
+                <div class="p-c-content">
+                    <div class="wrapper p-c-active">
+                        <div class="img">
+                            <img src="/image_files/cat_p_1.png" alt="">
+                        </div>
+                        <small>Grocery</small>
+                    </div>
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="/image_files/cat_p_1.png" alt="">
+                        </div>
+                        <small>Grocery</small>
+                    </div>
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="/image_files/cat_p_1.png" alt="">
+                        </div>
+                        <small>Grocery</small>
+                    </div>
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="/image_files/cat_p_1.png" alt="">
+                        </div>
+                        <small>Grocery</small>
+                    </div>
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="/image_files/cat_p_1.png" alt="">
+                        </div>
+                        <small>Grocery</small>
+                    </div>
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="/image_files/cat_p_1.png" alt="">
+                        </div>
+                        <small>Grocery</small>
+                    </div>
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="/image_files/cat_p_1.png" alt="">
+                        </div>
+                        <small>Grocery</small>
+                    </div>
+                </div>
+
+                <div class="right-arrow">
+                    <a>&#10095;</a>
+                </div>
+            </div>
+
+            <div class="collections">
+                <div class="content">
+                    <div class="c-c-left">
+                        <p>Fresh Fruit Collections</p>
+                        <div class="img-ico">
+                            <a href="#"><img src="/image_files/arrow-right.png" alt=""></a>
+                        </div>
+                        
+                    </div>
+                    <div class="c-c-right">
+                        <img src="/image_files/collection-pine.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="c-c-left">
+                        <p>Fresh Fruit Collections</p>
+                        <div class="img-ico">
+                            <a href="#"><img src="/image_files/arrow-right.png" alt=""></a>
+                        </div>
+                        
+                    </div>
+                    <div class="c-c-right">
+                        <img src="/image_files/collection-pine.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="c-c-left">
+                        <p>Fresh Fruit Collections</p>
+                        <div class="img-ico">
+                            <a href="#"><img src="/image_files/arrow-right.png" alt=""></a>
+                        </div>
+                        
+                    </div>
+                    <div class="c-c-right">
+                        <img src="/image_files/collection-pine.png" alt="">
+                    </div>
+                </div>
+
+               
+            </div>
+
+            <div class="deals-of-the-week">
+                <div class="d-o-t-w-heading">
+                    <div class="left">
+                        <p>Deals of the week</p>
+                    </div>
+                    <div class="right">
+                        <div class="left-arrow">
+                            <a>&#10094;</a>
+                        </div>
+                        <div class="right-arrow">
+                            <a>&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="green"></div>
+                    <div class="gray"></div>
+                </div>
+                <div class="d-o-t-w-container">
+  
+                    <div class="content">
+
+                        <div class="img">
+                            <div class="d-o-t-w-c-h-bg">
+                                <img src="/image_files/deals-of-the-week.png" alt="">
+                           
+                            </div>
+                             <div class="d-o-t-w-overlay">
+                                 <div class="overlay-content">
+                                    <div class="quintity"> 
+                                        <div class="minus">-</div>
+                                        
+                                        <div class="count">1</div>
+                                        <div class="plus">+</div>
+                                    </div>
+                                    <div class="shop-now-btn">
+                                        <button>Add to cart</button>
+                                    </div>
+                                    
+                                 </div>
+                                    <div class="det-btn">
+                                        <p>Details</p> 
+                                        <div class="det-btn-ic">
+                                            <img src="/image_files/arrow-gray.png" alt="">
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="infos">
+                        <p class="cat-name">Category name</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p class="product-name">
+                                Product name
+                            </p>
+                            <p class="price">$200 <del>$300</del></p>
+                        </div>
+                    </div>
+                    <div class="content">
+
+                        <div class="img">
+                            <div class="d-o-t-w-c-h-bg">
+                                <img src="/image_files/deals-of-the-week.png" alt="">
+                           
+                            </div>
+                             <div class="d-o-t-w-overlay">
+                                 <div class="overlay-content">
+                                    <div class="quintity"> 
+                                        <div class="minus">-</div>
+                                        
+                                        <div class="count">1</div>
+                                        <div class="plus">+</div>
+                                    </div>
+                                    <div class="shop-now-btn">
+                                        <button>Add to cart</button>
+                                    </div>
+                                    
+                                 </div>
+                                    <div class="det-btn">
+                                        <p>Details</p> 
+                                        <div class="det-btn-ic">
+                                            <img src="/image_files/arrow-gray.png" alt="">
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="infos">
+                        <p class="cat-name">Category name</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p class="product-name">
+                                Product name
+                            </p>
+                            <p class="price">$200 <del>$300</del></p>
+                        </div>
+                    </div>
+                    <div class="content">
+
+                        <div class="img">
+                            <div class="d-o-t-w-c-h-bg">
+                                <img src="/image_files/deals-of-the-week.png" alt="">
+                           
+                            </div>
+                             <div class="d-o-t-w-overlay">
+                                 <div class="overlay-content">
+                                    <div class="quintity"> 
+                                        <div class="minus">-</div>
+                                        
+                                        <div class="count">1</div>
+                                        <div class="plus">+</div>
+                                    </div>
+                                    <div class="shop-now-btn">
+                                        <button>Add to cart</button>
+                                    </div>
+                                    
+                                 </div>
+                                    <div class="det-btn">
+                                        <p>Details</p> 
+                                        <div class="det-btn-ic">
+                                            <img src="/image_files/arrow-gray.png" alt="">
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="infos">
+                        <p class="cat-name">Category name</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p class="product-name">
+                                Product name
+                            </p>
+                            <p class="price">$200 <del>$300</del></p>
+                        </div>
+                    </div>
+                    <div class="content">
+
+                        <div class="img">
+                            <div class="d-o-t-w-c-h-bg">
+                                <img src="/image_files/deals-of-the-week.png" alt="">
+                           
+                            </div>
+                             <div class="d-o-t-w-overlay">
+                                 <div class="overlay-content">
+                                    <div class="quintity"> 
+                                        <div class="minus">-</div>
+                                        
+                                        <div class="count">1</div>
+                                        <div class="plus">+</div>
+                                    </div>
+                                    <div class="shop-now-btn">
+                                        <button>Add to cart</button>
+                                    </div>
+                                    
+                                 </div>
+                                    <div class="det-btn">
+                                        <p>Details</p> 
+                                        <div class="det-btn-ic">
+                                            <img src="/image_files/arrow-gray.png" alt="">
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="infos">
+                        <p class="cat-name">Category name</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p class="product-name">
+                                Product name
+                            </p>
+                            <p class="price">$200 <del>$300</del></p>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+
+               
+            </div>
+            <div class="popular-brands">
+                <div class="popular-brands-heading">
+                    <div class="left">
+                        <p>Popular brands</p>
+                    </div>
+                    <div class="right">
+                        <div class="left-arrow">
+                            <a>&#10094;</a>
+                        </div>
+                        <div class="right-arrow">
+                            <a>&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="green"></div>
+                    <div class="gray"></div>
+                </div>
+
+                <div class="popular-brands-container">
+                    <div class="content">
+                        <div class="logo">
+                            <img src="/image_files/pop_brands_logo_1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="logo">
+                            <img src="/image_files/pop_brands_logo_2.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="logo">
+                            <img src="/image_files/pop_brands_logo_3.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="logo">
+                            <img src="/image_files/pop_brands_logo_4.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="logo">
+                            <img src="/image_files/pop_brands_logo_5.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="logo">
+                            <img src="/image_files/pop_brands_logo_6.svg" alt="">
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="offer-banner">
+                <div class="offer-banner-container">
+                    <div class="left">
+                    <img src="/image_files/offer-banner.png" alt="">
+                </div>
+                <div class="middle">
+
+                    <div class="title">
+                        <p>Deals of the week</p>
+                    </div>
+
+                    <div class="time-container">
+                        <div class="day day">
+                            <div class="time">06</div>
+                            <p>Days</p>
+                        </div>
+                        <div class="colon">:</div>
+                        <div class="hour day">
+                            <div class="time">11</div>
+                            <p>Hours</p>
+                        </div>
+                        <div class="colon">:</div>
+                        <div class="min day">
+                            <div class="time">49</div>
+                            <p>Mins</p>
+                        </div>
+                        <div class="colon">:</div>
+                        <div class="sec day">
+                            <div class="time">43</div>
+                            <p>Secs</p>
+                        </div>
+                    </div>
+
+                    <div class="btn">Shop Now</div>
+
+                </div>
+                <div class="right">
+                    <img src="/image_files/offer-banner2.png" alt="">
+                </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+     <footer>
+
+    </footer>
+</body>
+</html>

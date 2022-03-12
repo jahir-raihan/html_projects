@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event tester</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('select.hello').change(function(){
+                var selectedCountry = $(this).children("option:selected").val();
+                if (selectedCountry == 'Helooo'){
+                    let s = document.getElementById('hello');
+                    s.insertAdjacentHTML('afterend', 'Hello mother fucker')
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <select id="hello" class="hello" name="hello" onselect="hell()" >
+        <option value="">------</option>
+        <option  value="Helooo">Helooo</option>
+    </select>
+</body>
+</html>

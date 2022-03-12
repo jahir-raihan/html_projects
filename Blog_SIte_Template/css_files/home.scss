@@ -18,11 +18,17 @@ button{
 }
 // css for navigation bar
 header{
-    
+    position:sticky;
+    top:0;
+    background:white;
+    -webkit-box-shadow: 0px 7px 15px -8px rgba(0,0,0,0.5); 
+    box-shadow: 0px 7px 15px -8px rgba(0,0,0,0.5);
     nav{
-        padding:.5em;
+        padding:.5em 1em;
         
-        width:1300px;
+       // width:1300px;
+        width:100%;
+        
         margin:auto;
         align-items: center;
         display:flex;
@@ -32,6 +38,7 @@ header{
             .logo{
                 p{
                     font-size:30px;
+                    color:black;
                 }
             }
         }
@@ -74,11 +81,73 @@ header{
     }
 }
 
+.toggle-section{
+    padding-top:.5em;
+    display: none;
+    .toggle-icon{
+        cursor: pointer;
+        div{
+            width:25px;
+            height:2px;
+            background:black;
+            border-radius: 1px;
+            margin-bottom: .4em;
+        }
+    }
+}
+.toggle-content{
+    border-top:1px solid black;
+    position:absolute;
+    left:0;
+    top:52px;
+    background: #0bc5b3;
+    color: white ;
+    width:100%;
+    padding:1em .5em;
+    -webkit-box-shadow: 0px 7px 15px -8px rgba(0,0,0,0.5); 
+    box-shadow: 0px 7px 15px -8px rgba(0,0,0,0.5);
+    height:0px;
+    display: none;
+    transition-duration: .3s;
+    transition: ease-in-out;
+    ul{
+        width:fit-content;
+        margin:auto;
+        list-style: none;
+        text-align: center;
+        li{
+            padding-bottom: .5em;
+            border-bottom: 1px solid white;
+            a{
+                color:white;
+                font-size:20px;
+            }
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        li:hover{
+            cursor: pointer;
+            transition-duration: .2s;
+            transition: ease-in-out;
+            a{
+                color:black;
+                transition-duration: .2s;
+            }
+            border-color: rgb(0, 0, 0);
+        }
+    }
+}
+.t-c-show{
+    height:fit-content !important;
+    display: block;
+    transition-duration: .3s;
+}
+
 // css for container hero section
 
 .container{
     
-    width:1250px;
+    width:90%;
     margin:auto;
     margin-top:7em;
     
@@ -102,6 +171,7 @@ header{
             }
             .blog-short-context{
                 width:70%;
+                min-width:300px;
                 font-size:20px;
                 color:black;
                 margin-bottom: 1.5em;
@@ -281,8 +351,8 @@ header{
 // css for footer subscribe section
 
 footer{
-    width:1420px;
-    
+    //width:1420px;
+    width:100%;
     margin:auto;
     margin-top:10em;
     .footer-subscribe-section{
@@ -368,5 +438,149 @@ footer{
 
        
         
+    }
+}
+.f-t-title{
+    padding-bottom: .2em;
+    
+    margin:auto;
+    border-bottom: .5px solid black;
+}
+
+// media querys 
+@media only screen and(max-width:1000px){
+    .toggle-section{
+        display: block !important;
+    }
+    .btn-none{
+        display: none;
+    }
+    .nav-middle{
+        display: none;
+    }
+    .container{
+        margin-top:5em;
+    }
+    .hero{
+        margin-bottom: 7em !important; 
+        .home-hero-right{
+            display: none;
+        }
+    }
+    .latest-blogs{
+        display: grid !important;
+        grid-template-columns: 50% 50% ;
+        gap:5%;
+        .l-blog{
+            width:90% !important;
+        }
+    }
+}
+
+@media only screen and(max-width:800px){
+    .blog-title{
+        p{
+            font-size:2.5em !important;
+        }
+    }
+    .search-blog input{
+        width:50% !important;
+        height:30px !important;
+        font-size:12px;
+    }
+    .search-blog{
+        button{
+            width:30%;
+            height:30px !important;
+            padding:unset !important;
+        }
+    }
+
+    .blog{
+        .blog-left{
+            .cat-tag{
+                font-size:10px;
+            }
+            .blog-title{
+                font-size:8px;
+            }
+            .blog-short-context{
+                font-size: 6px;
+            }
+        }
+        .blog-right{
+            img{
+                width:200px !important;
+                height:150px !important;
+            }
+        }
+    }
+
+    .latest-blog-heading{
+        text-align: center;
+        .blog-title{
+            font-size:15px !important;
+        }
+        .blog-short-context{
+            width:80% !important;
+            margin:auto;
+        }
+    }
+    .footer-contents{
+        display: block !important;
+        
+        .f-t-left , .f-t-middle, .f-t-right{
+            text-align: center;
+        }
+        .f-t-s-context{
+            width:100% !important;
+        }
+        .f-t-right{
+            width:fit-content;
+            margin:auto;
+        }
+    }
+    .f-t-title{
+        
+        
+        width:50% !important;
+        
+    }
+}
+
+@media only screen and(max-width:500px){
+    .latest-blogs{
+        grid-template-columns: 100% !important;
+        .l-blog{
+            margin:auto;
+        }
+    }
+    .footer-subscribe-section{
+        margin-top:17em !important;
+        .sub-btn{
+            
+            margin:auto;
+            input{
+                width:60% !important;
+                height:30px !important;
+                font-size:10px;
+
+            }
+            button{
+                width:40% !important;
+                height:30px !important;
+                padding:unset !important;
+            }
+        }
+        
+    }
+    
+    
+}
+@media only screen and(max-width:450px){
+    .blog{
+        .blog-short-context{
+            display: none;
+        }
     }
 }

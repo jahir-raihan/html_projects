@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css_files/view_blog.css">
+    <script src="/js_files/base.js"></script>
     <title>Blog | Home</title>
 </head>
 <body>
@@ -30,7 +31,23 @@
             </div>
 
             <div class="nav-right">
-                <button class="subscribe-btn">Subscribe</button>
+                <button class="subscribe-btn btn-none">Subscribe</button>
+                <div class="toggle-section">
+                    <div class="toggle-icon"  onclick="toggle()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="toggle-content " id="toggle_con_v">
+                        <ul>
+                            <li class="active"><a href="#">Hotem Enterprices</a></li>
+                            <li><a href="#">Best travel places</a></li>
+                            <li><a href="#">Cheap traveling ideas</a></li>
+                            <li><a href="#">WildLife Safari</a></li>
+                            <li><a href="#">Best Street food</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
         </nav>

@@ -1,0 +1,480 @@
+// initial css for tabulation sheet
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+table{
+    font-size:11px ;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin-left:1em;
+    
+}
+ td{
+    border:1px solid black;
+   
+    text-align: center;
+    padding:.3em .5em;
+}
+
+.container{
+    width:1600px;
+  
+    margin:auto;
+    
+    margin-bottom: 1em;
+}
+
+// css for tabulation sheet.
+
+.tabulation-head{
+   margin-bottom: .5em;
+    display: flex;
+    justify-content: space-between;
+    .left{
+       padding-top:1.7em;
+        margin:auto;
+        text-align: center;
+        h1{
+            font-size:27px;
+        }
+        .clg-name{
+            letter-spacing: 1px;
+            font-weight: normal;
+            margin-bottom: .1em;
+        }
+        .dep-name{
+            font-size:20px;
+            margin-bottom: .1em;
+        }
+        .tab-info{
+            font-size:16px;
+            margin-bottom: .1em;
+        }
+        .held-in{
+            font-size:14px;
+        }
+    }
+    .right{
+        display: flex;
+        table{
+            td{
+                font-size:11px;
+            }
+        }
+    }
+}
+// css for main tabulation sheet
+
+.table{
+    font-size:11px !important;
+}
+// css for tabultaion sheet table top
+
+.table{
+    
+    //border:1px solid black;
+    .table-top{
+        display: flex;
+        border:1px solid black;
+        border-bottom: none;
+        
+        .sl, .reg-no, .s-name{
+            width:40px;
+            height:155px;
+            border:none;
+            border-right:1px solid black;
+            
+            p{
+                width:fit-content;
+                margin:auto;
+                margin-top:6em;
+            }
+        }
+        .reg-no{
+            width:120px;
+        }
+        .s-name{
+            width:180px;
+        }
+        .sub-exam-desc-t{
+           
+            .sub-t{
+                text-align: center;
+                border-right:1px solid black;
+                border-bottom: 1px solid black;
+                height:65px;
+                p{
+                    padding-top:20px;
+
+                }
+            }
+            width:140px;
+            .exam-desc-t{
+                border-right:1px solid black;
+                height:90px;
+                text-align: center;
+                p{
+                    padding-top:35px;
+                }
+            }
+        }
+        
+        .sub-exam-desc{
+            width:170px;
+            .sub-n{
+                text-align: center;
+                border: none;
+                border-right:1px solid black;
+                border-bottom: 1px solid black;
+                height:65px;
+                padding:.3em;
+
+                p{
+                    padding:calc(100% - 92%) 0;
+                    
+                }
+            }
+            .exam-desc{
+                display: flex;
+                .s-t-t, .s-p-t{
+                    border:1px solid black;
+                    border-left:none;
+                    border-top:none;
+                    text-align: center;
+                    position: relative;
+                    padding:0 .3em;
+                    width:58px;
+                    
+                }
+                .row-flex{
+                    width:100%;
+                    display: flex;
+                    position: relative;
+                    .r1{
+                        position:absolute;
+                        right:0;
+                        transform: rotate(-90deg);
+                        width:73px;
+                        margin-top:2em;
+                        border:1px solid black;
+                        border-top:none;
+                        border-right:none;
+                        border-left: none;
+                        padding:.5em 0;
+                        padding-left:.3em;
+                        margin-right:.6em;
+                        
+                        
+                        
+                    }
+                    .r2{
+                        position:absolute;
+                        left:0;
+                        border:1px solid black;
+                        border-top:none;
+                        border-right:none;
+                        border-left:none;
+                        margin-top:2em;
+                        padding:.5em 0;
+                        padding-bottom: .3em;
+                        padding-left:.3em;
+                        margin-left:.7em;
+
+                        width:73px;
+                        transform: rotate(-90deg);
+                       
+                    }
+                }
+
+                .sub-total-title{
+                    position: relative;
+                    width:35px;
+                    border:none;
+                    border-right:1px solid black;
+                   
+                    height:90px;
+                    .total-text{
+                        position:absolute;
+                        transform: rotate(-90deg);
+                        margin-top:3.5em;
+                        margin-left:.45em;
+                        padding-bottom: .3em;
+                        p{
+                            font-weight: bold;
+                        }
+                        
+                    }
+                }
+               
+              
+                
+            }
+            
+        }
+
+        .g-p-r-s{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            .GPA{
+                position: relative;
+                border-right:1px solid black;
+                .gpa-text{
+                    position: absolute;
+                    transform: rotate(-90deg);
+                    margin-top:6em;
+                    
+                    padding-top:2em;
+                    padding-left:1em;
+                }
+            }
+            .p-of-gpa{
+                position: relative;
+                border-right:1px solid black;
+                .p-o-marks-gpa{
+                    width:110px;
+                    padding-bottom: 5.5em;
+                    margin-top:3.5em;
+                    
+                
+                    transform: rotate(-90deg);
+                   
+                   
+                    
+                }
+            }
+            .remarks{
+                position: relative;
+
+                .remarks-txt{
+                    transform: rotate(-90deg);
+                    margin-top:6em;
+                }
+            }
+        }
+        
+    
+
+
+    }
+
+}
+
+
+// css for tabulation sheet mark inofs
+
+.table{
+    .mark-infos{
+        border:1px solid black;
+        border-top:none;
+        .m-i-r1{
+            display: flex;
+            border-top: 1px solid black;
+
+            .blank1{
+                width:32px;
+                border-right:1px solid black;
+            }
+            .blank2{
+                width:95px;
+                border-right:1px solid black;
+            }
+            .blank3{
+                width:143px;
+                border-right:1px solid black;
+            }
+            .full-marks{
+                text-align: left;
+                width:111px;
+                padding:.3em;
+                border-right:1px solid black;
+                
+            }
+            .s-marks{
+                display: flex;
+                width:151px;
+               
+                .mark{
+                    width:30px;
+                    border-right:1px solid black;
+                    text-align: right;
+                    padding:.3em;
+                }
+                .t-f-mark{
+                    width:28px;
+                }
+                .p-f-mark{
+                    width:28.5px;
+                }
+                .s-t-mark{
+                    text-align: center;
+                    width:35px;
+                    padding:.3em;
+                    border-right:1px solid black;
+                }
+            }
+
+            .gpa-section{
+                display: grid;
+                grid-template-columns:53px 53px 53px;
+                .gpa-point, .per-of-gpa{
+                    border-right:1px solid black;
+                    text-align: center;
+                    padding:.3em;
+                    
+                        
+                    
+                }
+                
+            }
+        }
+    }
+}
+
+// css for tabulation sheet student data
+
+.table{
+    .student-data{
+        
+        .s-d-row{
+            display: flex;
+            border:1px solid black;
+            border-top:none;
+           
+            .sl-no, .registration, .student-name, .s-b-roll, .s-sub-marks{
+                height:60px;
+                border-right:1px solid black;
+                
+                text-align: center;
+                p{
+                    margin-top:2.1em;
+                }
+            }
+            
+            .sl-no{
+                
+                
+                width:32px;
+                
+            }
+            .registration{
+                width:95px;
+                
+                
+            }
+            .student-name{
+                width:143px;
+                
+                
+            }
+            .s-b-roll{
+                width:111px;
+            }
+
+            .s-sub-marks{
+                display: flex;
+                .s-m-c{
+                    width:30px;
+                    border-right:1px solid black;
+
+                    
+                }
+                .t-f-e{
+                    width:28px;
+                }
+                .p-c-asses{
+                    width:30px;
+                }
+                .p-f-e{
+                    width:28px;
+                }
+                .total-m-g-point{
+                    width:34px;
+                    p{
+                        
+                        margin:0;
+                        
+                    }
+                    .m-obt, .g-l-obt, .g-p-obt{
+                        text-align: center;
+                        padding-top:3px;
+                    }
+                    .m-obt, .g-l-obt{
+                        border-bottom: 1px solid black;
+                    }
+                }
+            }
+            .gpa-section{
+                display: grid;
+                grid-template-columns:53px 53px 53px;
+                .gpa-point, .per-of-gpa{
+                    border-right:1px solid black;
+                    text-align: center;
+
+                    padding:.3em;
+                    p{
+                        margin-top:2em;
+                    }
+                    
+                        
+                    
+                }
+                
+            }
+
+        }
+        .s-d-row-nine{
+            border-left:none !important;
+            border-right:none !important;
+            .sl-no, .registration, .student-name, .s-b-roll, .s-sub-marks{
+                border-right:none;
+                
+            }
+            
+            .s-m-c{
+                
+                border-right:none !important;
+
+                
+            }
+            .m-obt, .g-l-obt{
+                border-bottom: none !important;
+            }
+            .gpa-point, .per-of-gpa{
+                border-right:none !important;
+               
+            }
+
+
+        }
+    }
+}
+
+// css for print button
+
+.print-btn{
+    
+    position: fixed;
+    
+    right:-37px;
+    top:100px;
+    button{
+        cursor: pointer;
+        -webkit-box-shadow: -10px 2px 50px -8px rgba(0, 0, 0, 0.733); 
+        box-shadow: -10px 2px 50px -8px rgba(0, 0, 0, 0.733);
+        background:#172577;
+        color:white;
+        border:none;
+        letter-spacing: 1px;
+        border-radius: 8px;
+        transform: rotate(-90deg);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        width:100px;
+        height:30px;
+        font-weight: bold;
+        
+    }
+}
